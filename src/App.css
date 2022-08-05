@@ -1,38 +1,101 @@
-.App {
+@import '~antd/dist/antd.css';
+
+#root {
+  height: 100vh;
+}
+
+#root .ant-layout {
+  height: 100%;
+}
+.logo {
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  line-height: 60px;
   text-align: center;
+  font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#components-layout-demo-custom-trigger .trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+/* table */
+.ant-table-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+.ant-spin-nested-loading,
+.ant-spin-container,
+.ant-table-container {
+  height: 100%;
+}
+.ant-spin-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.ant-table {
+  flex: 1;
+}
+.ant-table-content {
+  height: calc(100% - 56px);
+}
+.ant-table-wrapper .ant-pagination {
+  height: 56px;
 }
 
-.App-link {
-  color: #61dafb;
+/* modal */
+
+/* .ant-modal-body {
+  height: calc(45vh - 55px - 53px);
+  overflow: auto;
+} */
+
+/* login */
+.form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgCard {
+  display: flex;
+  flex-direction: column;
+}
+.imgCard .ant-card-cover {
+  height: 63%;
+}
+.imgCard .ant-card-cover img {
+  height: 100%;
+}
+
+.news-card .ant-card-body {
+  height: calc(100% - 39px);
+  box-sizing: border-box;
+}
+.news-card .ant-card-body .ant-list {
+  height: 100%;
+}
+.news-card .ant-card-body .ant-list .ant-spin-nested-loading {
+  height: calc(100% - 56px);
 }

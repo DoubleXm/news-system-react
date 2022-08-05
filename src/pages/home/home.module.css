@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container .topHeader {
+  flex: 1;
+  height: 50%;
+}
+.container .bottomFooter {
+  flex: 1;
+}
+
+.cardContainer {
+  height: 100%;
+}
+
